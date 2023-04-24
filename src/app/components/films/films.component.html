@@ -1,0 +1,10 @@
+<h2>{{ peliculas.section }}</h2>
+<section class="scrollmenu">
+    <ul>
+      <li *ngFor="let peli of peliculas.peliculas" class="movie">
+        <h1>{{ peli.num }}</h1>
+        <img src="{{ peli.src }}" alt="{{ peli.alt }}" />
+      </li>
+    </ul>
+  </section>
+
